@@ -21,7 +21,12 @@ _by Fabio Velasquez_
 
 ---
 ## Initial Setup
+**Signing up for GitHub**:
 
+- Go to [https://github.com/](https://github.com/) and click on Sign Up
+- Select and enter your own Username, Email Address and Password
+- Select your plan
+- Finish the rest of the Setup
 
 
 ---
@@ -31,3 +36,13 @@ _by Fabio Velasquez_
 
 ---
 ## Workflow & Commands
+
+
+
+___
+## Error Handling
+
+
+
+___
+## Collaboration
