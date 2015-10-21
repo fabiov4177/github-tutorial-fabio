@@ -28,6 +28,13 @@ _by Fabio Velasquez_
 - Select your plan
 - Finish the rest of the Setup
 
+**Setting up an SSH Key:**
+
+- Grab the SSH Key from your IDE
+- On the top right of your GitHub, click on your profile icon and go to settings
+- Where it says "Personal Settings" on the left sidebar, click on SSH Keys
+- 
+
 
 ---
 ## Repository Setup
