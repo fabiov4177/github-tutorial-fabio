@@ -58,9 +58,9 @@ For example purposes were going to use the name practice-repo, and README.md but
 9. Fillout the repository information and makre sure that **both repos on your IDE and on Github both have the same name**
 10. Then click "Create repository"
 11. Now type in your IDE
-12. ```
-    git remote add origin git@github.com:(your username)/practice-repo
-    git push -u origin master ```
+12. 
+    `git remote add origin git@github.com:(your username)/practice-repo`
+    `git push -u origin master`
     
 9. Then finally just type in `git push` and all your changes to your repo will be "pushed" to your remote
 
