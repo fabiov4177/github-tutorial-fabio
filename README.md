@@ -83,9 +83,3 @@ Throughout this work flow it is a good idea to use the command `git status` in b
 
 
 ___
-## Error Handling
-
-
-
-___
-## Collaboration
