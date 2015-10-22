@@ -33,7 +33,14 @@ _by Fabio Velasquez_
 - Grab the SSH Key from your IDE
 - On the top right of your GitHub, click on your profile icon and go to settings
 - Where it says "Personal Settings" on the left sidebar, click on SSH Keys
-- 
+- Then click on "Add SSH Key" and type in the SSH Key you got from your IDE, and the title of it is your choice, then click "Add Key"
+- Then on your IDE, type in `ssh -T git@github.com` and type "yes" to confirm it
+
+**Configuring:**
+
+- Type in `git config --global user.name "First Last"`
+- Also type in `git config --global user.email "Email Address"`
+
 
 
 ---
