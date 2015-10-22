@@ -45,7 +45,14 @@ _by Fabio Velasquez_
 
 ---
 ## Repository Setup
+For example purposes were going to use the name practice-repo, and README.md but note you don't have to call it this, you can name it whatever you want, this is just an exmaple!
 
+1. In your IDE type `mkdir practice-repo`
+2. Go into it by typing in `cd practice-repo`
+3. Type `git init` to initalize the repo
+4. Add a new file so type in `touch README.md1` to create a starter file
+5. Save your file or if you're using Auto Save on your IDE, skip this step
+6. Add this file to the stage by typing `git add README.MD`
 
 
 ---
