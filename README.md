@@ -50,9 +50,19 @@ For example purposes were going to use the name practice-repo, and README.md but
 1. In your IDE type `mkdir practice-repo`
 2. Go into it by typing in `cd practice-repo`
 3. Type `git init` to initalize the repo
-4. Add a new file so type in `touch README.md1` to create a starter file
+4. Add a new file so type in `touch README.md` to create a starter file
 5. Save your file or if you're using Auto Save on your IDE, skip this step
 6. Add this file to the stage by typing `git add README.MD`
+7. Type in `git commit -m "your message here"`
+8. On your GitHub account, on the top right click on the "+" button and click "New repository"
+9. Fillout the repository information and makre sure that **both repos on your IDE and on Github both have the same name**
+10. Then click "Create repository"
+11. Now type in your IDE
+12. ```
+    git remote add origin git@github.com:(your username)/practice-repo
+    git push -u origin master ```
+    
+9. Then finally just type in `git push` and all your changes to your repo will be "pushed" to your remote
 
 
 ---
