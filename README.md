@@ -60,6 +60,7 @@ For example purposes were going to use the name practice-repo, and README.md but
 11. Now type in your IDE
 12. 
     `git remote add origin git@github.com:(your username)/practice-repo`
+    
     `git push -u origin master`
     
 9. Then finally just type in `git push` and all your changes to your repo will be "pushed" to your remote
