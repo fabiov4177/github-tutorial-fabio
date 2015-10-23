@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>GitHub Tutorial by fabiov4177</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>GitHub Tutorial</h1>
+        <h2>The BeGITing of using Github</h2>
+        <a href="https://github.com/fabiov4177/github-tutorial-fabio" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Fabio Velasquez</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p><strong>Git:</strong></p>
+
+<ul>
+<li>Git is a <em>version control system</em>, what this means is that it keeps "snapshots" of code</li>
+<li>Git is an amazing way to manage your code, every developer uses it</li>
+<li>HTML, CSS, JS, Ruby, SQL, Python, Java, Swift, Arduino all stored on Git </li>
+<li>Git does not require the use of GitHub</li>
+</ul>
+
+<p><strong>Github:</strong></p>
+
+<ul>
+<li>Github is the <em>cloud</em>, or place where the code is stored</li>
+<li>You can see the changes you have made and keep track of them</li>
+<li>It is easy to work with other people on GitHub, and you can collabrate on files</li>
+<li>Github requires the use of Git </li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<p><strong>Signing up for GitHub</strong>:</p>
+
+<ul>
+<li>Go to <a href="https://github.com/">https://github.com/</a> and click on Sign Up</li>
+<li>Select and enter your own Username, Email Address and Password</li>
+<li>Select your plan</li>
+<li>Finish the rest of the Setup</li>
+</ul>
+
+<p><strong>Setting up an SSH Key:</strong></p>
+
+<ul>
+<li>Grab the SSH Key from your IDE</li>
+<li>On the top right of your GitHub, click on your profile icon and go to settings</li>
+<li>Where it says "Personal Settings" on the left sidebar, click on SSH Keys</li>
+<li>Then click on "Add SSH Key" and type in the SSH Key you got from your IDE, and the title of it is your choice, then click "Add Key"</li>
+<li>Then on your IDE, type in <code>ssh -T git@github.com</code> and type <em>"yes"</em> to confirm it</li>
+</ul>
+
+<p><strong>Configuring:</strong></p>
+
+<ul>
+<li>Type in <code>git config --global user.name "First Last"</code>
+</li>
+<li>Also type in <code>git config --global user.email "Email Address"</code>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<p>For example purposes were going to use the name practice-repo, and README.md but note you don't have to call it this, you can name it whatever you want, this is just an exmaple!</p>
+
+<ol>
+<li>In your IDE type <code>mkdir practice-repo</code>
+</li>
+<li>Go into it by typing in <code>cd practice-repo</code>
+</li>
+<li>Type <code>git init</code> to initalize the repo</li>
+<li>Add a new file so type in <code>touch README.md</code> to create a starter file</li>
+<li>Save your file or if you're using Auto Save on your IDE, skip this step</li>
+<li>Add this file to the stage by typing <code>git add README.MD</code>
+</li>
+<li>Type in <code>git commit -m "your message here"</code>
+</li>
+<li>On your GitHub account, on the top right click on the "+" button and click "New repository"</li>
+<li>Fillout the repository information and makre sure that <strong>both repos on your IDE and on Github both have the same name</strong>
+</li>
+<li>Then click "Create repository"</li>
+<li>Now type in your IDE</li>
+<li>
+<p><code>git remote add origin git@github.com:(your username)/practice-repo</code></p>
+
+<p><code>git push -u origin master</code></p>
+</li>
+<li><p>Then finally just type in <code>git push</code> and all your changes to your repo will be "pushed" to your remote</p></li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p>The workflow is save, add, commit, push</p>
+
+<p><code>git add</code> adds your file to the Git stage, which means that your file is ready to be committed. You type in <code>git add "your file name"</code></p>
+
+<p><code>git commit</code> is when Git takes the snapchat of what is on the stage. Also you are aloud to add a message to your commit to help you describe what you changed to your file in this commit, the way you type it in to your IDE is <code>git commit -m "whatever your commit message is"</code></p>
+
+<p><code>git push</code> is the last part of the Workflow, this is where you are "pushing" your changes to the cloud, which is GitHub. The way you type it in is just <code>git push</code> and you will see all your changes being pushed up to Github.</p>
+
+<h2>
+<a id="note" class="anchor" href="#note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Note:</h2>
+
+<p>Throughout this work flow it is a good idea to use the command <code>git status</code> in between each step.</p>
+
+<p><code>git status</code> is a command that helps you keep track of whats going on. What I mean by this is it helps you know whats being added to the stage, or what is being committed, or what file hasn't been changed. It is an important part of the workflow as it helps you know whats going on and keeps you up to date and on top of things.</p>
+
+<hr>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/fabiov4177/github-tutorial-fabio/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/fabiov4177/github-tutorial-fabio/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/fabiov4177/github-tutorial-fabio"></a> is maintained by <a href="https://github.com/fabiov4177">fabiov4177</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
